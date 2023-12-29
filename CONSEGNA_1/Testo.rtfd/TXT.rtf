@@ -1,0 +1,163 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1671
+{\fonttbl\f0\fswiss\fcharset0 Arial-BoldMT;\f1\froman\fcharset0 Times-Roman;\f2\fswiss\fcharset0 Arial-BoldItalicMT;
+\f3\fswiss\fcharset0 ArialMT;\f4\fswiss\fcharset0 Arial-ItalicMT;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid1\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid1}
+{\list\listtemplateid2\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid101\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid2}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}}
+\paperw11900\paperh16840\margl1440\margr1440\vieww33400\viewh20500\viewkind0
+\deftab720
+\pard\pardeftab720\sl440\partightenfactor0
+
+\f0\b\fs32 \cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Sistemi Embedded e IoT \'c2\'a0- a.a. 2017-2018
+\f1\b0\fs24 \
+\pard\pardeftab720\sl280\partightenfactor0
+\cf2 \
+\pard\pardeftab720\sl500\partightenfactor0
+
+\f0\b\fs37\fsmilli18667 \cf2 Consegna #1 - 
+\f2\i Follow-the-Light!
+\f1\i0\b0\fs24 \
+\pard\pardeftab720\sl280\partightenfactor0
+\cf2 \
+\pard\pardeftab720\sl400\partightenfactor0
+
+\f3\fs29\fsmilli14667 \cf2 Si vuole realizzare un sistema embedded che implementa un gioco che chiamiamo 
+\f4\i Follow the Light.
+\f1\i0\fs24 \
+\pard\pardeftab720\sl280\partightenfactor0
+\cf2 \
+\pard\pardeftab720\sl400\partightenfactor0
+
+\f4\i\fs29\fsmilli14667 \cf2 Componenti HW
+\f1\i0\fs24 \
+\pard\pardeftab720\sl280\partightenfactor0
+\cf2 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sl400\partightenfactor0
+\ls1\ilvl0
+\f3\fs29\fsmilli14667 \cf2 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 3 led (L
+\fs17\fsmilli8800 \sub 1
+\fs29\fsmilli14667 \nosupersub , L
+\fs17\fsmilli8800 \sub 2
+\fs29\fsmilli14667 \nosupersub , L
+\fs17\fsmilli8800 \sub 3
+\fs29\fsmilli14667 \nosupersub ) verdi + 1 led rosso (L
+\fs17\fsmilli8800 \sub flash
+\fs29\fsmilli14667 \nosupersub )\uc0\u8232 \
+\ls1\ilvl0\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 3 pulsanti tattili (T
+\fs17\fsmilli8800 \sub 1
+\fs29\fsmilli14667 \nosupersub , T
+\fs17\fsmilli8800 \sub 2
+\fs29\fsmilli14667 \nosupersub , T
+\fs17\fsmilli8800 \sub 3
+\fs29\fsmilli14667 \nosupersub ), in corrispondenza dei led\uc0\u8232 \
+\ls1\ilvl0\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 1 potenziometro Pot\uc0\u8232 \
+\pard\pardeftab720\li1920\sl400\partightenfactor0
+\cf2 
+\f1\fs24 \
+\pard\pardeftab720\sl400\partightenfactor0
+
+\f3\fs29\fsmilli14667 \cf2 Il gioco deve proporre sequenze casuali di accensione e spegnimento dei led, \'c2\'a0di lunghezza crescente, e il giocatore deve riproporre le sequenze in ordine, mediante i pulsanti.
+\f1\fs24 \
+\pard\pardeftab720\sl280\partightenfactor0
+\cf2 \
+\pard\pardeftab720\sl400\partightenfactor0
+
+\f4\i\fs29\fsmilli14667 \cf2 Comportamento dettagliato del gioco 
+\f1\i0\fs24 \
+\pard\pardeftab720\sl280\partightenfactor0
+\cf2 \
+\pard\pardeftab720\sl400\partightenfactor0
+
+\f3\fs29\fsmilli14667 \cf2 Inizialmente tutti i led L
+\fs17\fsmilli8800 \sub i
+\fs29\fsmilli14667 \nosupersub  sono spenti e il led L
+\f4\i\fs17\fsmilli8800 \sub flash
+\fs29\fsmilli14667 \nosupersub  
+\f3\i0 pulsa, con un certo periodo. Il punteggio del giocatore P \'c3\'a8 inizializzato a zero. Sulla seriale viene inviato il messaggio \'e2\'80\'9cWelcome to 
+\f4\i Follow the Light!\'e2\'80\uc0\u157 .
+\f1\i0\fs24 \
+\pard\pardeftab720\sl280\partightenfactor0
+\cf2 \
+\pard\pardeftab720\sl400\partightenfactor0
+
+\f3\fs29\fsmilli14667 \cf2 Alla pressione del pulsante T
+\fs17\fsmilli8800 \sub 1
+\fs29\fsmilli14667 \nosupersub , parte il gioco. \'c2\'a0Il led L
+\fs17\fsmilli8800 \sub flash
+\fs29\fsmilli14667 \nosupersub  si spegne e \'c2\'a0viene inviato sulla seriale il messaggio \'e2\'80\'9cReady!\'e2\'80\uc0\u157 . \'c2\'a0il sistema propone la prima sequenza di lunghezza 1, ovvero sceglie a caso 1 led fra i 3, lo accende e lo spegne e quindi attende per un certo DT
+\fs17\fsmilli8800 \sub input
+\fs29\fsmilli14667 \nosupersub  che il giocatore riproduca la sequenza con i pulsanti. In questo caso, \'c2\'a0per la prima sequenza, deve premere il pulsante corrispondente al led che aveva acceso. 
+\f1\fs24 \
+\pard\pardeftab720\sl280\partightenfactor0
+\cf2 \
+\pard\pardeftab720\sl400\partightenfactor0
+
+\f3\fs29\fsmilli14667 \cf2 Se il giocatore sbaglia, allora il gioco termina: viene acceso il led \'c2\'a0L
+\fs17\fsmilli8800 \sub flash\super  \'c2\'a0
+\fs29\fsmilli14667 \nosupersub per DT
+\fs17\fsmilli8800 \sub gameover
+\fs29\fsmilli14667 \nosupersub  secondi e inviato sulla seriale il messaggio \'e2\'80\'9cGame Over - Score: P\'e2\'80\'9c, dove P \'c3\'a8 il punteggio finale. Quindi il gioco ritorna nello stato iniziale.
+\f1\fs24 \
+\pard\pardeftab720\sl280\partightenfactor0
+\cf2 \
+\pard\pardeftab720\sl400\partightenfactor0
+
+\f3\fs29\fsmilli14667 \cf2 Se invece il giocatore indovina, viene aggiunto al punteggio un valore pari alla lunghezza della sequenza corrente (al primo giro \'c3\'a8 1) e quindi parte la sequenza successiva (in questo caso di lunghezza 2), ovvero il sistema accende e spegne una sequenza di un numero di \'c2\'a0led pari al precedente pi\'c3\'b9 1 (in questo caso quindi 2), 
+\f4\i estendendo la sequenza precedente
+\f3\i0 . Ovvero: viene mantenuta la sequenza precedente e aggiunto un ulteriore elemento. Il giocatore deve riproporre la medesima sequenza con i tasti tattili corrispondenti.
+\f1\fs24 \
+\pard\pardeftab720\sl280\partightenfactor0
+\cf2 \
+\pard\pardeftab720\sl400\partightenfactor0
+
+\f0\b\fs29\fsmilli14667 \cf2 FACOLTATIVO:
+\f1\b0\fs24 \
+\pard\pardeftab720\sl280\partightenfactor0
+\cf2 \
+\pard\pardeftab720\sl400\partightenfactor0
+
+\f3\fs29\fsmilli14667 \cf2 La velocit\'c3\'a0 con cui si accendono e spengono i led \'c3\'a8 regolata dal potenziometro Pot - la regolazione deve avvenire prima che parta il gioco. Tale velocit\'c3\'a0 determina anche un moltiplicatore finale per il punteggio (BONUS), per cui pi\'c3\'b9 \'c3\'a8 veloce, maggiore \'c3\'a8 il moltiplicatore.
+\f1\fs24 \
+\pard\pardeftab720\sl320\partightenfactor0
+\cf2 \
+\pard\pardeftab720\sl280\sa120\partightenfactor0
+\cf2 \
+\pard\pardeftab720\sl280\sa240\partightenfactor0
+\cf2 \
+\pard\pardeftab720\sl280\partightenfactor0
+\cf2 \
+\pard\pardeftab720\sl400\partightenfactor0
+
+\f3\fs29\fsmilli14667 \cf2 Realizzare il sistema su Arduino, implementando il programma in C/C++. \'c2\'a0Per i parametri, utilizzare valori che si ritengono sensati a partire da valutazioni empiriche. Per tutti gli aspetti non specificati, fare le scelte che si credono pi\'c3\'b9 opportune.
+\f1\fs24 \
+\pard\pardeftab720\sl280\partightenfactor0
+\cf2 \
+\pard\pardeftab720\sl400\partightenfactor0
+
+\f3\fs29\fsmilli14667 \cf2 Il materiale da consegnare deve includere:
+\f1\fs24 \
+\pard\pardeftab720\sl280\partightenfactor0
+\cf2 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sl400\partightenfactor0
+\ls2\ilvl0
+\f3\fs29\fsmilli14667 \cf2 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Schema Fritzing del sistema\uc0\u8232 \
+\ls2\ilvl0\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Sorgenti del progetto\uc0\u8232 \
+\pard\pardeftab720\sl400\partightenfactor0
+\cf2  
+\f1\fs24 \
+\pard\pardeftab720\sl280\partightenfactor0
+\cf2 \
+\
+\
+\
+\
+\
+}

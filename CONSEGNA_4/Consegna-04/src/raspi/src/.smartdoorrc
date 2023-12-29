@@ -1,0 +1,11 @@
+{
+    "serverPort": 3000,
+    "serialPort": "/dev/ttyACM0",
+    "baudRate": 9600,
+    "ledInsidePin": 23,
+    "ledAccessFailedPin": 24,
+    "databaseHostName": "localhost",
+    "databaseUserName": "root",
+    "databasePassword": "",
+    "databaseName": "seiot_consegna4"
+}

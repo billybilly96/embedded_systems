@@ -1,0 +1,145 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1671
+{\fonttbl\f0\fswiss\fcharset0 ArialMT;\f1\fswiss\fcharset0 Arial-BoldMT;\f2\fswiss\fcharset0 Arial-BoldItalicMT;
+\f3\fswiss\fcharset0 Arial-ItalicMT;}
+{\colortbl;\red255\green255\blue255;\red236\green236\blue236;\red0\green0\blue0;\red0\green0\blue233;
+}
+{\*\expandedcolortbl;;\cssrgb\c94118\c94118\c94118;\cssrgb\c0\c0\c0;\cssrgb\c0\c0\c93333;
+}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{none\}}{\leveltext\leveltemplateid1\'00;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid1}
+{\list\listtemplateid2\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{none\}}{\leveltext\leveltemplateid101\'00;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid2}
+{\list\listtemplateid3\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{none\}}{\leveltext\leveltemplateid201\'00;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid3}
+{\list\listtemplateid4\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{none\}}{\leveltext\leveltemplateid301\'00;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid4}
+{\list\listtemplateid5\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{none\}}{\leveltext\leveltemplateid401\'00;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid5}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}{\listoverride\listid3\listoverridecount0\ls3}{\listoverride\listid4\listoverridecount0\ls4}{\listoverride\listid5\listoverridecount0\ls5}}
+\paperw11900\paperh16840\margl1440\margr1440\vieww33400\viewh20500\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs32 \cf0 \cb2 \expnd0\expndtw0\kerning0
+Consegna #4 - Smart Door\
+\pard\pardeftab720\partightenfactor0
+
+\f1\b \cf0 \cb1 Sistemi Embedded e IoT \'a0- a.a. 2017-2018
+\f0\b0\fs29\fsmilli14667 \
+\
+\pard\pardeftab720\partightenfactor0
+
+\f1\b\fs37\fsmilli18667 \cf0 Consegna #4 - 
+\f2\i Smart Door
+\f0\i0\b0\fs29\fsmilli14667 \
+\
+Si vuole realizzare un sistema embedded che funge da 
+\f3\i varco intelligente
+\f0\i0 , controllando l\'92accesso esclusivo ad un certo ambiente mediante una porta.\
+\
+Il sistema \'e8 composto da tre sottosistemi che comunicano tra loro:\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls1\ilvl0\cf0 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+Un sottosistema denominato DOOR, basato su microcontrollore (Arduino)\
+\ls1\ilvl0\kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+Un sottosistema denominato GW (gateway), basato su SoC (Raspberry Pi)\
+\ls1\ilvl0\kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+Un sottosistema denominato MOBILE, basato su tecnologia mobile (Android)\
+\pard\pardeftab720\partightenfactor0
+\cf0 \
+\pard\pardeftab720\partightenfactor0
+
+\fs32 \cf0 \
+\pard\pardeftab720\partightenfactor0
+
+\fs29\fsmilli14667 \cf0 \
+\pard\pardeftab720\partightenfactor0
+\cf0 {{\NeXTGraphic 997kdNNgPxBYEG-wru0YLssSAKPd6UK9_Ml8Rs-zuoIcpczaUoZm0R3QOpNGmqPTi7IYei5BL6gJknb3PsozJRSPtc2y9N_8Q-7tSLz2Kwl0R2xvxVsURzxa2WFEFRao-9rOhaQQ.png \width15420 \height6700 \noorient \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\pardeftab720\partightenfactor0
+\cf0 \
+\pard\pardeftab720\partightenfactor0
+
+\fs32 \cf0 \
+\pard\pardeftab720\partightenfactor0
+
+\fs29\fsmilli14667 \cf0 \
+\
+Sottosistema DOOR\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls2\ilvl0\cf0 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+1 pulsante tattile, denominato BT\sub EXIT\nosupersub \
+\ls2\ilvl0\kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+1\'a0led rosso, denominato L\sub VALUE\nosupersub \'a0\
+\ls2\ilvl0\kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+1 led verde, denominato L\sub ON \nosupersub \'a0- pu\'f2 essere il led 13 onboard)\
+\ls2\ilvl0\kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+1 sensore di temperatura TEMP\
+\ls2\ilvl0\kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+1 sensore di prossimit\'e0 PROX\
+\ls2\ilvl0\kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+1 sensore di rilevamento presenza PIR\
+\ls2\ilvl0\kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+1 servo SERVO\
+\pard\pardeftab720\partightenfactor0
+\cf0 \
+Sottosistema GW\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls3\ilvl0\cf0 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+1 led verde, denominato L\sub INSIDE\nosupersub \
+\ls3\ilvl0\kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+1 led rosso, denominato L\sub FAILED_ACCESS\nosupersub \
+\pard\pardeftab720\partightenfactor0
+\cf0 \
+GW e DOOR sono collegati via seriale wired. DOOR e MOBILE comunicano via Bluetooth\
+\pard\pardeftab720\partightenfactor0
+
+\f3\i \cf0 Specifiche di comportamento del sistema
+\f0\i0 \
+\
+Nello stato iniziale si presuppone non ci sia nessuno nell\'92ambiente: porta chiusa, led tutti spenti a parte L\sub ON\nosupersub \'a0- questo led acceso significa che il sistema \'e8 in funzione.\
+\
+Quando un utente si avvicina alla porta avendo con se il sistema MOBILE ad una distanza inferiore a MIN_DIST e vi permane per MIN_SEC secondi, allora il sottosistema MOBILE saluta l\'92utente e chiede USER+PASSWORD.\
+\
+Nel caso in cui l\'92utente sia accreditato e le credenziali siano corrette -- la verifica deve avvenire ad opera del sistema GW -- allora la porta si apre - l\'92apertura della porta \'e8 simulata dalla rotazione di SERVO da 0 a 180. \'a0Se le credenziali non sono corrette, ne viene data notifica su MOBILE, su GW viene fatto il log dell\'92evento e viene fatto lampeggiare (1 flash) il led L\sub FAILED_ACCESS\nosupersub .\
+\
+Nel caso in cui le credenziali siano corrette, se dopo MAX_DELAY secondi il sistema non rileva la presenza\'a0(mediante PIR), allora la porta si chiude e sul sottosistema MOBILE la sessione viene chiusa. \'a0Su GW viene fatto il log dell\'92evento e viene fatto lampeggiare (1 flash) il led L\sub FAILED_ACCESS\nosupersub .\
+\
+Se viene rilevata la presenza, la porta rimane aperta, sul sottosistema GW fatto il log\'a0dell\'92evento relativo all\'92inizio della sessione di lavoro e viene acceso il led L\sub INSIDE\nosupersub .\
+\
+Durante la sessione di lavoro all\'92interno dell\'92ambiente, mediante il sistema MOBILE l\'92utente pu\'f2:\
+\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls4\ilvl0\cf0 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+vedere il valore corrente del sensore TEMP, aggiornato real-time\
+\ls4\ilvl0\kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+regolare l\'92intensit\'e0 di L\sub VALUE\nosupersub \'a0in percentuale (da 0 a 100%)\
+\pard\pardeftab720\partightenfactor0
+\cf0 \
+Per terminare la sessione di lavoro e uscire dall\'92ambiente, l\'92utente pu\'f2 premere un pulsante END sul sistema MOBILE oppure il pulsante BT\sub EXIT\nosupersub \'a0in DOOR. \'a0La richiesta di uscita provoca nel sottosistema DOOR provvede la chiusura della porta (servo a 0) e sul sottosistema MOBILE la \'a0chiusura \'a0della sessione di lavoro. \'a0\
+\
+Sul sottosistema GW deve essere in funzione un servizio Internet che permetta di:\
+\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls5\ilvl0\cf0 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+Ispezionare il log degli accessi eseguiti nell\'92arco della giornata\
+\ls5\ilvl0\kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+Leggere il valore corrente di TEMP e di L\sub VALUE\nosupersub \
+\pard\pardeftab720\partightenfactor0
+\cf0 \
+Il servizio pu\'f2 essere realizzato con il protocollo che si preferisce (ad esempio: server TCP/UDP, web service HTTP/REST, Web app, etc.).\
+\'a0\
+\pard\pardeftab720\partightenfactor0
+
+\fs32 \cf0 \
+\pard\pardeftab720\partightenfactor0
+
+\fs29\fsmilli14667 \cf0 \
+\
+Lo studente \'e8 libero di scegliere le architetture software pi\'f9 opportune in ognuno dei sottosistemi. Tali architetture devono essere brevemente descritte nella relazione, insieme al comportamento delle parti - usando formalismi appropriati.\
+\'a0\
+Per i parametri, utilizzare valori che si ritengono sensati a partire da valutazioni empiriche. Per tutti gli aspetti non specificati, fare le scelte che si credono pi\'f9 opportune.\
+\'a0\
+\
+\
+\
+\
+\
+\
+\pard\pardeftab720\partightenfactor0
+
+\fs32 \cf0 \cb2 Pubblicato da {\field{\*\fldinst{HYPERLINK "https://docs.google.com/"}}{\fldrslt \cf4 \ul \ulc4 Google Drive}}\'96{\field{\*\fldinst{HYPERLINK "https://docs.google.com/abuse?id=e/2PACX-1vRaSOusTiefQcr6UKP7-_n9UGknp545SEFKj73NNqYUcIz2H4mm0-u9K0mmiHmttp2O0ng5gV44fREv"}}{\fldrslt \cf4 \cb2 \ul \ulc4 Segnala una violazione}}\'96Aggiornato automaticamente ogni 5 minuti}

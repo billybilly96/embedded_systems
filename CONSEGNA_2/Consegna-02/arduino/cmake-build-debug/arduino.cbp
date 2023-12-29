@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="arduino"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/billy/Dropbox/TRIENNALE/3_ANNO/1 semestre/Sistemi embedded e IoT/CONSEGNA_2/Consegna-02/arduino/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/billy/Dropbox/TRIENNALE/3_ANNO/1\ semestre/Sistemi\ embedded\ e\ IoT/CONSEGNA_2/Consegna-02/arduino/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/billy/Dropbox/TRIENNALE/3_ANNO/1\ semestre/Sistemi\ embedded\ e\ IoT/CONSEGNA_2/Consegna-02/arduino/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/billy/Dropbox/TRIENNALE/3_ANNO/1\ semestre/Sistemi\ embedded\ e\ IoT/CONSEGNA_2/Consegna-02/arduino/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/billy/Dropbox/TRIENNALE/3_ANNO/1\ semestre/Sistemi\ embedded\ e\ IoT/CONSEGNA_2/Consegna-02/arduino/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/billy/Dropbox/TRIENNALE/3_ANNO/1 semestre/Sistemi embedded e IoT/CONSEGNA_2/Consegna-02/arduino/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/billy/Dropbox/TRIENNALE/3_ANNO/1\ semestre/Sistemi\ embedded\ e\ IoT/CONSEGNA_2/Consegna-02/arduino/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/billy/Dropbox/TRIENNALE/3_ANNO/1\ semestre/Sistemi\ embedded\ e\ IoT/CONSEGNA_2/Consegna-02/arduino/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/billy/Dropbox/TRIENNALE/3_ANNO/1\ semestre/Sistemi\ embedded\ e\ IoT/CONSEGNA_2/Consegna-02/arduino/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/billy/Dropbox/TRIENNALE/3_ANNO/1\ semestre/Sistemi\ embedded\ e\ IoT/CONSEGNA_2/Consegna-02/arduino/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/billy/Dropbox/TRIENNALE/3_ANNO/1 semestre/Sistemi embedded e IoT/CONSEGNA_2/Consegna-02/arduino/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/billy/Dropbox/TRIENNALE/3_ANNO/1\ semestre/Sistemi\ embedded\ e\ IoT/CONSEGNA_2/Consegna-02/arduino/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/billy/Dropbox/TRIENNALE/3_ANNO/1\ semestre/Sistemi\ embedded\ e\ IoT/CONSEGNA_2/Consegna-02/arduino/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/billy/Dropbox/TRIENNALE/3_ANNO/1\ semestre/Sistemi\ embedded\ e\ IoT/CONSEGNA_2/Consegna-02/arduino/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/billy/Dropbox/TRIENNALE/3_ANNO/1\ semestre/Sistemi\ embedded\ e\ IoT/CONSEGNA_2/Consegna-02/arduino/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="arduino">
+				<Option output="/Users/billy/Dropbox/TRIENNALE/3_ANNO/1 semestre/Sistemi embedded e IoT/CONSEGNA_2/Consegna-02/arduino/cmake-build-debug/arduino" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/billy/Dropbox/TRIENNALE/3_ANNO/1 semestre/Sistemi embedded e IoT/CONSEGNA_2/Consegna-02/arduino/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/billy/Dropbox/TRIENNALE/3_ANNO/1 semestre/Sistemi embedded e IoT/CONSEGNA_2/Consegna-02/arduino/smart_garage"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/10.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/billy/Dropbox/TRIENNALE/3_ANNO/1\ semestre/Sistemi\ embedded\ e\ IoT/CONSEGNA_2/Consegna-02/arduino/cmake-build-debug/Makefile&quot;  VERBOSE=1 arduino"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/billy/Dropbox/TRIENNALE/3_ANNO/1\ semestre/Sistemi\ embedded\ e\ IoT/CONSEGNA_2/Consegna-02/arduino/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/billy/Dropbox/TRIENNALE/3_ANNO/1\ semestre/Sistemi\ embedded\ e\ IoT/CONSEGNA_2/Consegna-02/arduino/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/billy/Dropbox/TRIENNALE/3_ANNO/1\ semestre/Sistemi\ embedded\ e\ IoT/CONSEGNA_2/Consegna-02/arduino/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="arduino/fast">
+				<Option output="/Users/billy/Dropbox/TRIENNALE/3_ANNO/1 semestre/Sistemi embedded e IoT/CONSEGNA_2/Consegna-02/arduino/cmake-build-debug/arduino" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/billy/Dropbox/TRIENNALE/3_ANNO/1 semestre/Sistemi embedded e IoT/CONSEGNA_2/Consegna-02/arduino/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/billy/Dropbox/TRIENNALE/3_ANNO/1 semestre/Sistemi embedded e IoT/CONSEGNA_2/Consegna-02/arduino/smart_garage"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/10.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/billy/Dropbox/TRIENNALE/3_ANNO/1\ semestre/Sistemi\ embedded\ e\ IoT/CONSEGNA_2/Consegna-02/arduino/cmake-build-debug/Makefile&quot;  VERBOSE=1 arduino/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/billy/Dropbox/TRIENNALE/3_ANNO/1\ semestre/Sistemi\ embedded\ e\ IoT/CONSEGNA_2/Consegna-02/arduino/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/billy/Dropbox/TRIENNALE/3_ANNO/1\ semestre/Sistemi\ embedded\ e\ IoT/CONSEGNA_2/Consegna-02/arduino/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/billy/Dropbox/TRIENNALE/3_ANNO/1\ semestre/Sistemi\ embedded\ e\ IoT/CONSEGNA_2/Consegna-02/arduino/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/billy/Dropbox/TRIENNALE/3_ANNO/1 semestre/Sistemi embedded e IoT/CONSEGNA_2/Consegna-02/arduino/smart_garage/Button.h">
+			<Option target="arduino"/>
+		</Unit>
+		<Unit filename="/Users/billy/Dropbox/TRIENNALE/3_ANNO/1 semestre/Sistemi embedded e IoT/CONSEGNA_2/Consegna-02/arduino/smart_garage/ButtonImpl.cpp">
+			<Option target="arduino"/>
+		</Unit>
+		<Unit filename="/Users/billy/Dropbox/TRIENNALE/3_ANNO/1 semestre/Sistemi embedded e IoT/CONSEGNA_2/Consegna-02/arduino/smart_garage/ButtonImpl.h">
+			<Option target="arduino"/>
+		</Unit>
+		<Unit filename="/Users/billy/Dropbox/TRIENNALE/3_ANNO/1 semestre/Sistemi embedded e IoT/CONSEGNA_2/Consegna-02/arduino/smart_garage/CommandReaderTask.cpp">
+			<Option target="arduino"/>
+		</Unit>
+		<Unit filename="/Users/billy/Dropbox/TRIENNALE/3_ANNO/1 semestre/Sistemi embedded e IoT/CONSEGNA_2/Consegna-02/arduino/smart_garage/CommandReaderTask.h">
+			<Option target="arduino"/>
+		</Unit>
+		<Unit filename="/Users/billy/Dropbox/TRIENNALE/3_ANNO/1 semestre/Sistemi embedded e IoT/CONSEGNA_2/Consegna-02/arduino/smart_garage/GarageDoorTask.cpp">
+			<Option target="arduino"/>
+		</Unit>
+		<Unit filename="/Users/billy/Dropbox/TRIENNALE/3_ANNO/1 semestre/Sistemi embedded e IoT/CONSEGNA_2/Consegna-02/arduino/smart_garage/GarageDoorTask.h">
+			<Option target="arduino"/>
+		</Unit>
+		<Unit filename="/Users/billy/Dropbox/TRIENNALE/3_ANNO/1 semestre/Sistemi embedded e IoT/CONSEGNA_2/Consegna-02/arduino/smart_garage/Led.cpp">
+			<Option target="arduino"/>
+		</Unit>
+		<Unit filename="/Users/billy/Dropbox/TRIENNALE/3_ANNO/1 semestre/Sistemi embedded e IoT/CONSEGNA_2/Consegna-02/arduino/smart_garage/Led.h">
+			<Option target="arduino"/>
+		</Unit>
+		<Unit filename="/Users/billy/Dropbox/TRIENNALE/3_ANNO/1 semestre/Sistemi embedded e IoT/CONSEGNA_2/Consegna-02/arduino/smart_garage/LedExt.cpp">
+			<Option target="arduino"/>
+		</Unit>
+		<Unit filename="/Users/billy/Dropbox/TRIENNALE/3_ANNO/1 semestre/Sistemi embedded e IoT/CONSEGNA_2/Consegna-02/arduino/smart_garage/LedExt.h">
+			<Option target="arduino"/>
+		</Unit>
+		<Unit filename="/Users/billy/Dropbox/TRIENNALE/3_ANNO/1 semestre/Sistemi embedded e IoT/CONSEGNA_2/Consegna-02/arduino/smart_garage/Light.h">
+			<Option target="arduino"/>
+		</Unit>
+		<Unit filename="/Users/billy/Dropbox/TRIENNALE/3_ANNO/1 semestre/Sistemi embedded e IoT/CONSEGNA_2/Consegna-02/arduino/smart_garage/LightExt.h">
+			<Option target="arduino"/>
+		</Unit>
+		<Unit filename="/Users/billy/Dropbox/TRIENNALE/3_ANNO/1 semestre/Sistemi embedded e IoT/CONSEGNA_2/Consegna-02/arduino/smart_garage/MsgService.cpp">
+			<Option target="arduino"/>
+		</Unit>
+		<Unit filename="/Users/billy/Dropbox/TRIENNALE/3_ANNO/1 semestre/Sistemi embedded e IoT/CONSEGNA_2/Consegna-02/arduino/smart_garage/MsgService.h">
+			<Option target="arduino"/>
+		</Unit>
+		<Unit filename="/Users/billy/Dropbox/TRIENNALE/3_ANNO/1 semestre/Sistemi embedded e IoT/CONSEGNA_2/Consegna-02/arduino/smart_garage/ParkingAssistanceTask.cpp">
+			<Option target="arduino"/>
+		</Unit>
+		<Unit filename="/Users/billy/Dropbox/TRIENNALE/3_ANNO/1 semestre/Sistemi embedded e IoT/CONSEGNA_2/Consegna-02/arduino/smart_garage/ParkingAssistanceTask.h">
+			<Option target="arduino"/>
+		</Unit>
+		<Unit filename="/Users/billy/Dropbox/TRIENNALE/3_ANNO/1 semestre/Sistemi embedded e IoT/CONSEGNA_2/Consegna-02/arduino/smart_garage/Pir.cpp">
+			<Option target="arduino"/>
+		</Unit>
+		<Unit filename="/Users/billy/Dropbox/TRIENNALE/3_ANNO/1 semestre/Sistemi embedded e IoT/CONSEGNA_2/Consegna-02/arduino/smart_garage/Pir.h">
+			<Option target="arduino"/>
+		</Unit>
+		<Unit filename="/Users/billy/Dropbox/TRIENNALE/3_ANNO/1 semestre/Sistemi embedded e IoT/CONSEGNA_2/Consegna-02/arduino/smart_garage/PresenceSensor.h">
+			<Option target="arduino"/>
+		</Unit>
+		<Unit filename="/Users/billy/Dropbox/TRIENNALE/3_ANNO/1 semestre/Sistemi embedded e IoT/CONSEGNA_2/Consegna-02/arduino/smart_garage/ProximitySensor.h">
+			<Option target="arduino"/>
+		</Unit>
+		<Unit filename="/Users/billy/Dropbox/TRIENNALE/3_ANNO/1 semestre/Sistemi embedded e IoT/CONSEGNA_2/Consegna-02/arduino/smart_garage/Runnable.h">
+			<Option target="arduino"/>
+		</Unit>
+		<Unit filename="/Users/billy/Dropbox/TRIENNALE/3_ANNO/1 semestre/Sistemi embedded e IoT/CONSEGNA_2/Consegna-02/arduino/smart_garage/Scheduler.cpp">
+			<Option target="arduino"/>
+		</Unit>
+		<Unit filename="/Users/billy/Dropbox/TRIENNALE/3_ANNO/1 semestre/Sistemi embedded e IoT/CONSEGNA_2/Consegna-02/arduino/smart_garage/Scheduler.h">
+			<Option target="arduino"/>
+		</Unit>
+		<Unit filename="/Users/billy/Dropbox/TRIENNALE/3_ANNO/1 semestre/Sistemi embedded e IoT/CONSEGNA_2/Consegna-02/arduino/smart_garage/SharedContext.cpp">
+			<Option target="arduino"/>
+		</Unit>
+		<Unit filename="/Users/billy/Dropbox/TRIENNALE/3_ANNO/1 semestre/Sistemi embedded e IoT/CONSEGNA_2/Consegna-02/arduino/smart_garage/SharedContext.h">
+			<Option target="arduino"/>
+		</Unit>
+		<Unit filename="/Users/billy/Dropbox/TRIENNALE/3_ANNO/1 semestre/Sistemi embedded e IoT/CONSEGNA_2/Consegna-02/arduino/smart_garage/Sonar.cpp">
+			<Option target="arduino"/>
+		</Unit>
+		<Unit filename="/Users/billy/Dropbox/TRIENNALE/3_ANNO/1 semestre/Sistemi embedded e IoT/CONSEGNA_2/Consegna-02/arduino/smart_garage/Sonar.h">
+			<Option target="arduino"/>
+		</Unit>
+		<Unit filename="/Users/billy/Dropbox/TRIENNALE/3_ANNO/1 semestre/Sistemi embedded e IoT/CONSEGNA_2/Consegna-02/arduino/smart_garage/Task.h">
+			<Option target="arduino"/>
+		</Unit>
+		<Unit filename="/Users/billy/Dropbox/TRIENNALE/3_ANNO/1 semestre/Sistemi embedded e IoT/CONSEGNA_2/Consegna-02/arduino/smart_garage/Timer.cpp">
+			<Option target="arduino"/>
+		</Unit>
+		<Unit filename="/Users/billy/Dropbox/TRIENNALE/3_ANNO/1 semestre/Sistemi embedded e IoT/CONSEGNA_2/Consegna-02/arduino/smart_garage/Timer.h">
+			<Option target="arduino"/>
+		</Unit>
+		<Unit filename="/Users/billy/Dropbox/TRIENNALE/3_ANNO/1 semestre/Sistemi embedded e IoT/CONSEGNA_2/Consegna-02/arduino/smart_garage/config.h">
+			<Option target="arduino"/>
+		</Unit>
+		<Unit filename="/Users/billy/Dropbox/TRIENNALE/3_ANNO/1 semestre/Sistemi embedded e IoT/CONSEGNA_2/Consegna-02/arduino/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

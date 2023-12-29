@@ -1,0 +1,94 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1671
+{\fonttbl\f0\fswiss\fcharset0 ArialMT;\f1\fswiss\fcharset0 Arial-BoldMT;\f2\fswiss\fcharset0 Arial-BoldItalicMT;
+\f3\fswiss\fcharset0 Arial-ItalicMT;}
+{\colortbl;\red255\green255\blue255;\red236\green236\blue236;\red0\green0\blue0;\red0\green0\blue233;
+}
+{\*\expandedcolortbl;;\cssrgb\c94118\c94118\c94118;\cssrgb\c0\c0\c0;\cssrgb\c0\c0\c93333;
+}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{none\}}{\leveltext\leveltemplateid1\'00;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid1}
+{\list\listtemplateid2\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{none\}}{\leveltext\leveltemplateid101\'00;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid2}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}}
+\paperw11900\paperh16840\margl1440\margr1440\vieww33400\viewh20500\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs32 \cf0 \cb2 \expnd0\expndtw0\kerning0
+Consegna #3 - Smart Radar\
+\pard\pardeftab720\partightenfactor0
+
+\f1\b \cf0 \cb1 Sistemi Embedded e IoT \'a0- a.a. 2017-2018
+\f0\b0\fs29\fsmilli14667 \
+\
+\pard\pardeftab720\partightenfactor0
+
+\f1\b\fs37\fsmilli18667 \cf0 Consegna #3 - 
+\f2\i Smart Radar
+\f0\i0\b0\fs29\fsmilli14667 \
+\
+Si vuole realizzare un sistema embedded che funge da 
+\f3\i radar intelligente
+\f0\i0 , composto da due sottosistemi collegati via seriale - uno denominato \'93Centralina\'94, realizzato su piattaforma Raspberry Pi, e uno denominato \'93Radar\'94, realizzato su Arduino.\
+\pard\pardeftab720\partightenfactor0
+\cf0 {{\NeXTGraphic Y_wR71XtcnGjFs6KLJ2etqK0NWkx6UPz4DUbdJ1MBdU4q2tdx_9qe-_2pKvX8-QDvxyZNAoCLXrkdFi3q1qvOIO5pJ1SltmeAFeN98UCbHpv61ipWRdj9rDBqODajvayMPvvc-kZ.png \width12680 \height5920 \noorient \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\pardeftab720\partightenfactor0
+\cf0 \
+\pard\pardeftab720\partightenfactor0
+
+\f3\i \cf0 Componenti HW
+\f0\i0 \
+\
+Centralina\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls1\ilvl0\cf0 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+2 pulsanti tattili, denominati ON e OFF\
+\ls1\ilvl0\kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+2 led verdi, denominati ON e DETECTED\
+\ls1\ilvl0\kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+1 led rosso, denominato TRACKING\
+\pard\pardeftab720\partightenfactor0
+\cf0 \
+Radar\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls2\ilvl0\cf0 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+1 led verde, denominato CONNECTED\
+\ls2\ilvl0\kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+1 servo su cui \'e8 montato un sensore di prossimit\'e0 denominato PROX\
+\pard\pardeftab720\partightenfactor0
+\cf0 \
+\pard\pardeftab720\partightenfactor0
+
+\f3\i \cf0 Comportamento del sistema
+\f0\i0 \
+\
+L\'92idea generale \'e8 che quando il sistema viene attivato, il radar (sensore PROX) inizi a ruotare da 0 a 180 gradi, avanti e indietro, ripetutamente, in modo da \'93scandagliare\'94 l\'92orizzonte (
+\f3\i scanning
+\f0\i0 ).\
+\
+Nello stato iniziale, il sistema complessivamente si trova in uno stato IDLE (riposo) in cui tutti i led sono spenti e il servo \'e8 fermo, con angolo 90. Il sensore PROX si presuppone sia montato sul servo, solidale con i supporti. A 90 gradi il sensore deve guardare in direzione centrale. La rotazione del servo implica la rotazione del sensore. Quando viene premuto il pulsante ON, il led ON e il led CONNECTED devono accendersi e il servo partire con lo scanning. Lo scanning deve essere fatto su 180 gradi con una certa velocit\'e0 angolare OMEGA - parametro configurabile.\
+\
+Ogni volta che viene rilevato un oggetto, deve accendersi DETECTED (per breve tempo, es. 0.1 s come flash) e sul sistema SW in esecuzione su Raspberry Pi deve essere scritto su stdout il messaggio: \'93Time XXX - Object detected at angle YYY\'93 - dove XXX \'e8 l\'92orario, mentre YYY \'e8 l\'92angolo (0-180) in cui \'e8 stato rilevato. Il messaggio deve essere scritto anche su un file di testo, come log. Ad ogni scan di 180 gradi completato, il sistema scrivere in stdout il numero di oggetto rilevati in quella scansione.\
+\
+Se l\'92oggetto rilevato \'e8 ad una distanza inferiore a MIN_DIST, allora deve essere acceso TRACKING e il radar deve fermarsi all\'92angolo in cui sta rilevando l\'92oggetto. Sul sistema SW in esecuzione su Raspberry deve essere scritto su stdout il messaggio: \'93Time XXX - Object tracked at angle YYY distance DDD\'94, riportando anche la distanza dell\'92oggetto. Se/quando in fase di tracking l\'92oggetto si allontana ad una distanza superiore a DIST_MIN, il led TRACKING viene spento e lo scanning \'a0riprende normalmente..\
+\
+\pard\pardeftab720\partightenfactor0
+
+\fs32 \cf0 \
+\pard\pardeftab720\partightenfactor0
+
+\fs29\fsmilli14667 \cf0 \
+\
+Il sistema deve essere realizzato assumendo, come vincolo, di mettere la logica di controllo principale del sistema sulla centralina (Raspberry Pi), lasciando sul radar (Arduino) unicamente la parte necessaria per il controllo dei sensori e attuatori.\
+\
+E\'92 possibile scegliere - sia per la centralina, sia per il radar - le architetture software che si ritengono pi\'f9 appropriate. Nella documentazione \'e8 richiesto in ogni caso di descrivere il comportamento del sistema usando formalismi appropriati.\
+\'a0\
+Per i parametri, utilizzare valori che si ritengono sensati a partire da valutazioni empiriche. Per tutti gli aspetti non specificati, fare le scelte che si credono pi\'f9 opportune.\
+\'a0\
+\
+\
+\
+\
+\
+\
+\pard\pardeftab720\partightenfactor0
+
+\fs32 \cf0 \cb2 Pubblicato da {\field{\*\fldinst{HYPERLINK "https://docs.google.com/"}}{\fldrslt \cf4 \ul \ulc4 Google Drive}}\'96{\field{\*\fldinst{HYPERLINK "https://docs.google.com/abuse?id=e/2PACX-1vSFyimxvrTjsejmEZXzj7zvJv_UCQ_a5TvsnEazCrx6ov3ywUwyTcMPTsBIS1xOm3eBYM-2uQOdX0rm"}}{\fldrslt \cf4 \cb2 \ul \ulc4 Segnala una violazione}}\'96Aggiornato automaticamente ogni 5 minuti}

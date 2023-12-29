@@ -1,0 +1,3 @@
+/Users/billy/Dropbox/TRIENNALE/3_ANNO/1 semestre/Sistemi embedded e IoT/CONSEGNA_4/Consegna-04/src/arduino/smart_door/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/billy/Dropbox/TRIENNALE/3_ANNO/1 semestre/Sistemi embedded e IoT/CONSEGNA_4/Consegna-04/src/arduino/smart_door/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/billy/Dropbox/TRIENNALE/3_ANNO/1 semestre/Sistemi embedded e IoT/CONSEGNA_4/Consegna-04/src/arduino/smart_door/cmake-build-debug/CMakeFiles/smart_door.dir

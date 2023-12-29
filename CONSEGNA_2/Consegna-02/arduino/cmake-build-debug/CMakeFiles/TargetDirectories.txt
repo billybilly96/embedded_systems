@@ -1,0 +1,3 @@
+/Users/billy/Dropbox/TRIENNALE/3_ANNO/1 semestre/Sistemi embedded e IoT/CONSEGNA_2/Consegna-02/arduino/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/billy/Dropbox/TRIENNALE/3_ANNO/1 semestre/Sistemi embedded e IoT/CONSEGNA_2/Consegna-02/arduino/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/billy/Dropbox/TRIENNALE/3_ANNO/1 semestre/Sistemi embedded e IoT/CONSEGNA_2/Consegna-02/arduino/cmake-build-debug/CMakeFiles/arduino.dir
